@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css?family=Calligraffitti|Open+Sans');
+
+*{
+  padding:0;
+  margin:0;
+}
+body{
+  overflow: hidden;
+}
+.hide {
+  display: none;
+}
+.startScreen {
+  position: absolute;
+  background-color: rgb(7, 180, 59) ;
+  left: 25%;
+  top: 150px;
+  color: white;
+  font-size: 22px;
+  text-align: center;
+  border: 1px solid red;
+  padding: 15px;
+  margin: auto;
+  width: 50%;
+  height:30%;
+  font-family: sans-serif;
+}
+.text
+{
+color: red;
+font-size: 35px;
+}
+.btn{
+  background-color: #210c99 ;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+  font-size: 25px;
+  border-radius: 30%;
+}
+html {
+  height: 100%;
+  background-color: #D0F0FF;
+}
+
+.main
+{
+  display:grid;
+  grid-template-columns: 3fr 5fr;
+  justify-content: space-between;
+}
+#img1
+{
+  border-radius: 50%;
+  height:200px;
+  width:200px;
+  }
+  div.img
+  {
+      width:100px;
+      height:140px;
+      position:absolute;
+      bottom:350px;
+      background-image:url('girl2.png');
+  }
+@keyframes jump{
+  0%{top: 150px;}
+  30%{top: 100px;}
+  70%{top: 100px;}
+  100%{top: 150px;}
+}
+h1
+{
+  background-color: magenta;
+  height: 65px;
+  width: 530px;
+  margin-top: 0%;
+  padding:2px;
+  font-size: 45px;
+  border-radius: 35%;
+  right:3px;
+  align-items: center;
+ }
+#header
+{
+  margin-top: 30px;
+}
+.obstacle{
+  width:150px;
+  height:150px;
+  position:relative;
+  left:1450px;
+  animation: block 10s infinite linear;
+   }
+ @keyframes block{
+  0%{left: 1450px}
+  100%{left: -40px}
+ }
+.images{
+  z-index:10;
+  margin-bottom: 0%;
+}
+.text-box {
+	position: relative;
+	display: flex;
+	align-items: center;
+  justify-content: center;
+  height: 5%;
+}
+
+h4 {
+	font-size: 8vw;
+	font-weight: 900;
+	background-color:  rgb(233, 145, 13) ;
+	color: #fff;
+	display: block;
+	padding: -.0.5em;
+}
+
+h4:nth-child(2) {
+	position: absolute;
+	background-color: #fff;
+	color: rgb(233, 145, 13) ;
+	clip-path: inset(-1% -1% 50% -1%); 
+}
+.container {
+	position: absolute;
+	top: 80%;
+	left: 40px;
+	right: 0;
+	bottom: 0;
+  width: 100%;
+  height:10px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+.obstacle {
+  position: absolute;
+  width: 120px;
+  height: 120px;
+  background-image: url('fish1.png');
+  bottom: 5px;
+}
+
+@keyframes slideright {
+  from {
+      background-position: 7000%;
+  }
+  to {
+      background-position: 0%;
+  }
+}
+
+@-webkit-keyframes slideright {
+  from {
+      background-position: 7000%;
+  }
+  to {
+      background-position: 0%;
+  }
+}
+
+#desert {
+  position: absolute;
+  bottom: 0px;
+  background-image: url('wave.png');
+  background-repeat: repeat-x;
+  animation: slideright 600s infinite linear;
+  -webkit-animation: slideright 600s infinite linear;
+  width: 100%;
+  height: 50px;
+  }
+.info
+{
+    font-size: 35px;
+    height:12vh;
+    color:mediumvioletred;
+}
